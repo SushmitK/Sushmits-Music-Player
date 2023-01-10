@@ -17,6 +17,13 @@
     .hide-600{
         display: none;
     }
+    .slider{
+        height: 40%;
+    }
+    .main-content{
+        height: 600px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px){
     .hide-500{
