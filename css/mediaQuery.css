@@ -55,4 +55,11 @@
     .navContent{
         width: 100%;
     }
+    .slider{
+        height: 35%;
+    }
+    .main-content{
+        height: 650px;
+        width: 100%;
+    }
 }
