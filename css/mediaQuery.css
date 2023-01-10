@@ -22,6 +22,9 @@
     .hide-500{
         display: none;
     }
+    #history{
+        height: 300px;
+    }
     .fav img{
         height: 100px;
         width: 100px;
