@@ -415,6 +415,9 @@ body{
 
     .textDiv{
        width: 100%;
-       margin: 0 0 0 30%;
+       margin: 0 0 0 0;
+    }
+    .mainImg{
+        align-items: flex-end;
     }
 }
