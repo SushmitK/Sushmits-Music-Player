@@ -22,4 +22,11 @@
     .hide-500{
         display: none;
     }
+    .fav img{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        transition:  border-radius 0.3s ease-in-out;
+        object-fit: cover;
+    }
 }
