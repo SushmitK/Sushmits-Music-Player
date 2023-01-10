@@ -1,0 +1,408 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: var(--slab);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* all */
+.svg{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg svg{
+    height: 25px;
+    width: 25px;
+}
+.svg svg path{
+    fill: white;
+}
+.icon svg{
+    height: 30px;
+    width: 30px;
+}
+.icon svg path,rect,circle{
+    /* fill: white; */
+    stroke: white;
+}
+.font-size-1{
+    font-size: 1rem;
+}
+.font-size-1p2{
+    font-size: 1.2rem;
+}
+.font-size-1p3{
+    font-size: 1.3rem;
+}
+.font-size-1p5{
+    font-size: 1.5rem;
+}
+.font-size-2{
+    font-size: 2rem;
+}
+.font-size-3{
+    font-size: 3rem;
+    font-family: var(--Archivo);
+}
+
+
+:root{
+
+    /* fonts */
+    --inter:'Inter';
+    --slab:'Josefin Slab';
+    --Archivo: 'Archivo Black';
+
+    /* colors */
+    --black: #0D0D0D;
+    --blue: #203F59;
+    --red: #BF2A2A;
+    --yellow1: #F2E85E;
+    --yellow2:#EDF24B;
+
+    /* gradients */
+    --grad1: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    --grad2: linear-gradient(180deg, #1B2B67 0%, #204796 96.87%);
+    --grad3: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+    --grad4: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
+    --grad5: linear-gradient( 109.6deg,  rgba(33,103,43,1) 11.3%, rgba(117,162,61,1) 91.1% );
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* sideNav */
+#sideNav{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    /* left: 0; */
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--black);
+    border-right: 1px solid var(--red);
+    z-index: 2;
+}
+#sideNav:hover{
+    left: 0;
+}
+.logo-div{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    margin-left: 150px;
+    width: 90px;
+    transition: all 0.2s ease-in-out;
+}
+#logo{
+    animation: fill 1s ease forwards 3.8s;
+    cursor: pointer;
+}
+#logo path{
+    --duration: 5s;
+    --delay: 0.3s;
+    --interval: calc(var(--delay)*var(--i));
+    animation: logo-anim 2s var(--interval) cubic-bezier(.17,.67,.83,.67) both; 
+}
+#sideNav:hover .logo-div{
+    justify-content: center;
+}
+#sideNav:hover #logo{
+    margin-left: 0;
+    width: 120px;
+}
+
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--blue);
+}
+.sideNavElement{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sideNavElement a{
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.sideNavElement div{
+    display: inline-block;
+    height: 100%;
+}
+.sideNavElement p{
+    display: none;
+    font-size: 1rem;
+    margin-left: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.2s;
+}
+#sideNav:hover p{
+    opacity: 1;
+   display: inline;
+}
+#sideNav:hover a{
+    margin-left: 30px;
+ }
+.sideNav-end{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* Nav */
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.navContent{
+    background-color: var(--black);
+    width: 95%;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* search */
+.search{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: var(--black);
+    border-radius: 10px;
+    border: 1px solid #998f8f;
+    padding: 0;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.search:focus-within{
+    border-color: white;
+}
+.search>.svg{
+    margin-left: 10px;
+}
+.search input{
+    background: transparent;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+/* right section */
+.right{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+/* subscription */
+.subscription{
+    display: flex;
+    align-items: center;
+}
+.subscription a{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--red);
+    transition: transform 0.2s ease-in, background-color 0.5s ease-in-out;
+}
+.subscription a:hover{
+    background-color: var(--blue);
+}
+.subscription a:active{
+    transform: translateY(5%);
+}
+.subscription .svg{
+    margin-right: 10px;
+    height: 25px;
+    display: inline-block;
+}
+
+/* profile */
+.profileImg img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profileSection{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+.profileSection img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+.profileSection p{
+    color: var(--black);
+}
+.profileSection a{
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.profileSection:hover h1{
+    color: white;
+}
+.headTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.headTitle h1{
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+#main{
+    width:100%;
+    height: 100%;
+    background-color: var(--blue);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: var(--grad3);
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+.mainImg{
+    width: 100%;
+    height: 100%;
+    background: url(/Static/Artist/shirley.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.textDiv{
+    width: 40%;
+    margin-left: 40%;
+}
+.textDiv h4{
+    font-size: 2rem;
+}
+.textDiv h1{
+    font-size: 3rem;
+    font-family: var(--Archivo);
+    margin-bottom: 5px;
+}
+.textDiv p{
+    font-size: 1.1rem;
+}
+.buttons{
+    margin-top: 15px;
+}
+.buttons a{
+    display: inline-flex;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in, background-color 0.5s ease-in-out;
+}
+.buttons a:hover{
+    background-color: var(--blue);
+}
+.buttons a:active{
+    transform: translateY(5%);
+}
+
+
+
+
+#mainSongs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    scroll-snap-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px){
+    .textDiv{
+        width: 40%;
+        margin-left: 55%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .textDiv{
+       background-color: rgba(133, 119, 119, 0.393);
+       padding: 20px;
+       border-radius: 20px;
+    }
+}
+@media screen and (max-width: 800px){
+    .textDiv{
+       width: 100%;
+       margin: 0 0 0 30%;
+    }
+}
