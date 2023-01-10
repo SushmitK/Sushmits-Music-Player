@@ -26,17 +26,22 @@
     }
 }
 @media screen and (max-width: 500px){
+    body{
+        width: 105%;
+    }
     .hide-500{
         display: none;
     }
     #sideNav{
         display: none;
+        width: 100%;
     }
     #main{
         margin: 0;
     }
     .navContent{
         margin: 0;
+        width: 100%;
     }
     #history{
         height: 300px;
@@ -68,9 +73,7 @@
     .search input::placeholder{
         color: transparent;
     }
-    .navContent{
-        width: 100%;
-    }
+
     .slider{
         height: 35%;
     }
