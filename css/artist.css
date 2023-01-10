@@ -401,6 +401,9 @@ body{
     }
 }
 @media screen and (max-width: 800px){
+    #sideNav{
+        display: none;
+    }
     .textDiv{
        width: 100%;
        margin: 0 0 0 30%;
