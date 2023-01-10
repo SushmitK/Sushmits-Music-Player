@@ -416,6 +416,7 @@ body{
     background-color: black;
     overflow-y: scroll;
     transition: right 0.5s ease-in-out;
+    z-index: 2;
 }
 .queue:hover{
     right: 0;
