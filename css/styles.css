@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    background: var(--grad1);
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
@@ -308,6 +309,7 @@ body{
     width: 95%;
     margin-left: 100px;
     overflow: hidden;
+    background-color: var(--black);
 }
 #main::-webkit-scrollbar{
     display: none;
