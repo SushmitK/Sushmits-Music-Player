@@ -632,4 +632,7 @@ body{
 #history{
     height: 450px;
 }
+#history .favoriteItems{
+    overflow-y: scroll;
+}
 
