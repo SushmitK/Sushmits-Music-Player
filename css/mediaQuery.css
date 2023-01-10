@@ -1,0 +1,25 @@
+@media screen and (max-width: 1600px){
+    .title1 a{
+        right: 50px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .title1 a{
+        right: 70px;
+    }
+}
+@media screen and (max-width: 800px){
+    .hide-800{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .hide-600{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .hide-500{
+        display: none;
+    }
+}

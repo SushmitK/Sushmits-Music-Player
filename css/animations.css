@@ -1,0 +1,102 @@
+/* --------------------------------------------------------------------------------------------------------- */
+/* Logo Animation */
+
+#logo path:nth-child(1){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset:1000px;
+  }
+  #logo path:nth-child(2){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(3){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(4){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(5){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(6){
+   stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(7){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(8){
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+  }
+  #logo path:nth-child(9){
+    stroke-dasharray: 1200px;
+    stroke-dashoffset: 1200px;
+  }
+  #logo path:nth-child(10){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(11){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(12){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(13){
+   stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(14){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(15){
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+  }
+  #logo path:nth-child(16){
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+  }
+  #logo path:nth-child(17){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(18){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(19){
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+  #logo path:nth-child(20){
+   stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+  }
+
+  @keyframes logo-anim{
+    to{
+       stroke-dashoffset: 0px;
+     }
+ }
+ @keyframes fill{
+   from{
+     fill: rgba(255, 255, 255, 0.3);
+     transform: scale(1);
+   }
+   50%{
+     scale:1.01;
+   }
+   to{
+     fill: white;
+     transform: scale(1);
+   }
+ }
