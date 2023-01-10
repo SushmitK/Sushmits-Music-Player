@@ -401,6 +401,9 @@ body{
     }
 }
 @media screen and (max-width: 800px){
+    .main{
+        height: 70%;
+    }
     #sideNav{
         display: none;
     }
@@ -424,5 +427,8 @@ body{
 @media screen and (max-width: 500px){
     .hide-500{
         display: none;
+    }
+    .main{
+        height: 60%;
     }
 }
