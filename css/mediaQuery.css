@@ -43,4 +43,10 @@
         height: 100px;
         width: 100px;
     }
+    .artistItem{
+        height: 150px;
+    }
+    .main-content section{
+        height: 210px;
+    }
 }
