@@ -190,7 +190,6 @@ body{
 }
 .navContent{
     background-color: var(--black);
-    margin-left: 100px;
     width: 95%;
     margin-left: 100px;
     display: flex;

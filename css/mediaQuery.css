@@ -2,7 +2,6 @@
     .title1 a{
         right: 50px;
     }
-    
 }
 @media screen and (max-width: 1200px){
     .title1 a{
@@ -29,6 +28,15 @@
 @media screen and (max-width: 500px){
     .hide-500{
         display: none;
+    }
+    #sideNav{
+        display: none;
+    }
+    #main{
+        margin: 0;
+    }
+    .navContent{
+        margin: 0;
     }
     #history{
         height: 300px;
