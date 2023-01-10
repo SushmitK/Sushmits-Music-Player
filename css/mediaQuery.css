@@ -25,11 +25,22 @@
     #history{
         height: 300px;
     }
+    .fav {
+        height: 150px;
+        width: 130px;
+    }
+    .favoriteItems{
+        height: 290px;
+    }
     .fav img{
         height: 100px;
         width: 100px;
         border-radius: 10px;
         transition:  border-radius 0.3s ease-in-out;
         object-fit: cover;
+    }
+    .artistItem img{
+        height: 100px;
+        width: 100px;
     }
 }
