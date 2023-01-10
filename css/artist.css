@@ -421,3 +421,8 @@ body{
         align-items: flex-end;
     }
 }
+@media screen and (max-width: 500px){
+    .hide-500{
+        display: none;
+    }
+}
