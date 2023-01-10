@@ -49,4 +49,10 @@
     .main-content section{
         height: 210px;
     }
+    .search input::placeholder{
+        color: transparent;
+    }
+    .navContent{
+        width: 100%;
+    }
 }
