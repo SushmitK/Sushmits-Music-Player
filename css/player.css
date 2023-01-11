@@ -51,7 +51,7 @@ body{
 
 #musicPlayer{
     position: absolute;
-    bottom: 55px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
@@ -218,6 +218,16 @@ svg{
     }
     
 }
+@media screen and (max-width: 500px){
+
+    #musicPlayer{
+        position: absolute;
+        bottom: 55px;
+    }
+    
+}
+
+
 @media screen and (max-width: 450px){
 
     #time{
